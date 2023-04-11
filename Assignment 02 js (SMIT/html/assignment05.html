@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Change Background Color</title>
+    <style>
+      /* Add some styles to make the example clearer */
+      body {
+        background-color: #f0f0f0;
+      }
+      
+      #myDiv {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Page</h1>
+    <div id="myDiv"></div>
+    <script>
+      function changeBackgroundColor(element, color) {
+        element.style.backgroundColor = color; // set the background color of the element
+      }
+      
+      // test the function
+      const myElement = document.getElementById("myDiv");
+      changeBackgroundColor(myElement, "blue");
+    </script>
+  </body>
+</html>
